@@ -40,6 +40,6 @@ public class Minable : MonoBehaviour
 
     private void GiveRescource()
     {
-        Instantiate(resourceDonné,new Vector3(transform.position.x,transform.position.y+5,transform.position.z), new Quaternion(0,0,0,0));
+        Instantiate(resourceDonné,new Vector3(transform.position.x,transform.position.y+1,transform.position.z), new Quaternion(0,0,0,0));
     }
 }

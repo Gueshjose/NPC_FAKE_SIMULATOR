@@ -7,14 +7,15 @@ using UnityEngine;
 public class Craft : MonoBehaviour
 {
     Resource r1,r2,r3;
-    [SerializeField]List<Resource> ResourcesUtilisé;
-    [SerializeField]List<Item> ItemCraftable;
+    [SerializeField]List<GameObject> ResourcesUtilisé;
+    [SerializeField]List<GameObject> ItemCraftable;
     LivreRecette livreRecette;
     bool SomthingIsCraftable;
     Dictionary<Item,List<Resource>> Recettes;
 
     private void Start() 
     {
+        Recettes = new Dictionary<Item, List<Resource>>();
         RemplireLivreRecettes();
         livreRecette = new LivreRecette(Recettes);
         SomthingIsCraftable = false;
@@ -126,7 +127,19 @@ public class Craft : MonoBehaviour
 
 private void RemplireLivreRecettes()
 {
+    //ResourcesUtilisé;
+    //ItemCraftable;
+    List<Resource> ResourcePourRecette;
+    ResourcePourRecette = new List<Resource>();
 
+    //Ajout de materiaux dans une liste
+    ResourcePourRecette.Add(ResourcesUtilisé[0].GetComponent<Resource>());
+    ResourcePourRecette.Add(ResourcesUtilisé[1].GetComponent<Resource>());
+    ResourcePourRecette.Add(ResourcesUtilisé[2].GetComponent<Resource>());
+    //Connection de l item a la liste
+    Recettes.Add(ItemCraftable[0].GetComponent<Item>(),ResourcePourRecette);
+    //Creation de l item
+    Instantiate(ItemCraftable[0],new Vector3(transform.position.x,transform.position.y+1,transform.position.z), new Quaternion(0,0,0,0));
 }
 
 }
