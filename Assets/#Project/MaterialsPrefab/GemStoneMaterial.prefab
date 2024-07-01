@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GemStoneMaterial
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c9c1c6b4df1b6c34a81f5fa97630b07e, type: 3}
+      propertyPath: m_TagString
+      value: resource
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c9c1c6b4df1b6c34a81f5fa97630b07e, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.26

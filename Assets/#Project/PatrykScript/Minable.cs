@@ -21,12 +21,7 @@ public class Minable : MonoBehaviour
         if(cd > 0)
         {
             cd = cd - 0.1f;
-        }
-        if(hp <= 0)
-        {
-            hp = inithp;
-            GiveRescource();
-        }  
+        } 
     }
 
     private void OnTriggerEnter(Collider other) 
@@ -36,6 +31,11 @@ public class Minable : MonoBehaviour
             cd = maxCd;
             hp = hp -1;
         }
+        if(hp <= 0)
+        {
+            hp = inithp;
+            GiveRescource();
+        } 
     }
 
     private void GiveRescource()

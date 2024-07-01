@@ -55,17 +55,17 @@ public class Craft : MonoBehaviour
         {
             if(r1 == other.GetComponent<Resource>())
             {
-                r1 = other.GetComponent<Resource>();
+                r1 = null;
                 VerifyIfSomthingIsCraftable();
             }
             else if(r2 == other.GetComponent<Resource>())
             {
-                r2 = other.GetComponent<Resource>();
+                r2 = null;
                 VerifyIfSomthingIsCraftable();
             }
             else if(r3 == other.GetComponent<Resource>())
             {
-                r3 = other.GetComponent<Resource>();
+                r3 = null;
                 VerifyIfSomthingIsCraftable();
             }
         }
