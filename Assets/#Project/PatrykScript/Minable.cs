@@ -15,6 +15,7 @@ public class Minable : MonoBehaviour
 
     private void Start() {
         hp = inithp;
+        Instantiate(resourceDonné,new Vector3(transform.position.x,transform.position.y+3,transform.position.z), new Quaternion(0,0,0,0));
     }
     private void Update() 
     {
@@ -26,8 +27,10 @@ public class Minable : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) 
     {
-        if(other == toolsToMine && cd <= 0)
+        Debug.Log("Contact1");
+        if(other.gameObject == toolsToMine && cd <= 0)
         {
+            Debug.Log("Contact2");
             cd = maxCd;
             hp = hp -1;
         }

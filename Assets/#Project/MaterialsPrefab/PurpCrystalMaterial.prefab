@@ -18,7 +18,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7dcccdba733e9ac43a8438ecdef02267, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.15409856
+      value: 0.46
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7dcccdba733e9ac43a8438ecdef02267, type: 3}
       propertyPath: m_LocalScale.y
@@ -76,6 +76,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: -7096122629544295618}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 7dcccdba733e9ac43a8438ecdef02267,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -3638440381755698742}
   m_SourcePrefab: {fileID: 100100000, guid: 7dcccdba733e9ac43a8438ecdef02267, type: 3}
 --- !u!1 &9104982764837891059 stripped
 GameObject:
@@ -97,3 +101,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nom: PurpleCrystal
   type: 1
+--- !u!64 &-3638440381755698742
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9104982764837891059}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 7dcccdba733e9ac43a8438ecdef02267, type: 3}
