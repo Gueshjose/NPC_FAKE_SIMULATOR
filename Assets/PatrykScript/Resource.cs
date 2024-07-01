@@ -5,12 +5,12 @@ using UnityEngine;
 
 public enum ResourceType
 {
-    Minerals,Wood
+    LVMinerals,HVMinerals,Wood
 }
-public class Resource
+public class Resource:MonoBehaviour
 {
-    String nom;
-    ResourceType type;
+    [SerializeField]String nom;
+    [SerializeField]ResourceType type;
     //ont peut donner valeur en gold etc;
 
     Resource(String nom, ResourceType type)

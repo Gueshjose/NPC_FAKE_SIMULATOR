@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem.LowLevel;
 
-public class LivreRecette
+public class LivreRecette:MonoBehaviour
 {
+    [SerializeField]List<Item> itemsInGame;
     List<Dictionary<Item,List<Resource>>> Craftable;
     List<Resource> listR = new List<Resource>();
     Dictionary<Item,List<Resource>> Recette;
@@ -24,6 +25,15 @@ public class LivreRecette
     public void InitiateBook()
     {
 
+    }
+
+    public bool Verify(Resource r1, Resource r2)
+    {
+        return true;
+    }
+    public bool Verify(Resource r1, Resource r2,Resource r3)
+    {
+        return true;
     }
 
     public void addRecepies(Item CibleCrafting,List<Resource> listR)
@@ -46,6 +56,16 @@ public class LivreRecette
         listR.Add(r1);
         listR.Add(r2);
         listR.Add(r3);
+        tempDic.Add(CibleCrafting,listR);
+        Craftable.Add(tempDic);
+    }
+
+    public void addRecepies(Item CibleCrafting,Resource r1,Resource r2)
+    {
+        List<Resource> listR = new List<Resource>();
+        Dictionary<Item,List<Resource>> tempDic = new Dictionary<Item,List<Resource>>();
+        listR.Add(r1);
+        listR.Add(r2);
         tempDic.Add(CibleCrafting,listR);
         Craftable.Add(tempDic);
     }

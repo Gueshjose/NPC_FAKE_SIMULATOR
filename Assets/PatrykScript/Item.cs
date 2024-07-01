@@ -8,10 +8,10 @@ public enum ItemType
 {
     Dager,Sword,Bow,Shield
 }
-public class Item
+public class Item:MonoBehaviour
 {
-    string nom;
-    ItemType type;
+    [SerializeField]string nom;
+    [SerializeField]ItemType type;
 
     Item(string nom,ItemType type)
     {
