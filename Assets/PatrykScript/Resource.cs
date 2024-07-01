@@ -11,6 +11,7 @@ public class Resource:MonoBehaviour
 {
     [SerializeField]String nom;
     [SerializeField]ResourceType type;
+    
     //ont peut donner valeur en gold etc;
 
     Resource(String nom, ResourceType type)
