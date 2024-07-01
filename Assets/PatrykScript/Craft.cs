@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
@@ -6,14 +7,19 @@ using UnityEngine;
 public class Craft : MonoBehaviour
 {
     Resource r1,r2,r3;
+    [SerializeField]List<Resource> ResourcesUtilisé;
     LivreRecette livreRecette;
     bool SomthingIsCraftable;
+    Dictionary<Item,List<Resource>> Recettes;
 
     private void Start() 
     {
-        livreRecette = new LivreRecette();
-        livreRecette.InitiateBook();
+        RemplireLivreRecettes();
+        livreRecette = new LivreRecette(Recettes);
         SomthingIsCraftable = false;
+        //test
+        Debug.Log(VerifyIfSomthingIsCraftable());
+        //finTest
     }
 
     private void OnTriggerEnter(Collider other) {
@@ -116,5 +122,10 @@ public class Craft : MonoBehaviour
         return SomthingIsCraftable;
     }
 
+
+private void RemplireLivreRecettes()
+{
+
+}
 
 }
