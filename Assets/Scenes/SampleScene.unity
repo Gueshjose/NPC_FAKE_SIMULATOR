@@ -214,6 +214,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 150117132}
+  - component: {fileID: 150117133}
   m_Layer: 0
   m_Name: RedCrystal
   m_TagString: Untagged
@@ -241,6 +242,23 @@ Transform:
   - {fileID: 1977375970}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &150117133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150117131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b5c91b126ba15d49a4de9ebf48bc44d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  "resourceDonn\xE9": {fileID: 7600433854343949089, guid: d390a4fdbe0cdb5449fb965ea6137a6a,
+    type: 3}
+  inithp: 10
+  maxCd: 2
+  toolsToMine: {fileID: 0}
 --- !u!1 &181217459
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,6 +966,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 474303349}
+  - component: {fileID: 474303350}
   m_Layer: 0
   m_Name: PurpleCrystal
   m_TagString: Untagged
@@ -975,6 +994,23 @@ Transform:
   - {fileID: 669794226}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &474303350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474303348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b5c91b126ba15d49a4de9ebf48bc44d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  "resourceDonn\xE9": {fileID: 9104982764837891059, guid: dd35d87c6eaf40441b5cb70d8082a237,
+    type: 3}
+  inithp: 10
+  maxCd: 5
+  toolsToMine: {fileID: 0}
 --- !u!1001 &514554910
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6049,6 +6085,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2098863126}
+  - component: {fileID: 2098863127}
   m_Layer: 0
   m_Name: Gem
   m_TagString: Untagged
@@ -6074,6 +6111,23 @@ Transform:
   - {fileID: 1481230261}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2098863127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098863125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b5c91b126ba15d49a4de9ebf48bc44d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  "resourceDonn\xE9": {fileID: 1027851511490257839, guid: 9eea0bcbe3f57d648a9477fc9bd12c08,
+    type: 3}
+  inithp: 5
+  maxCd: 2
+  toolsToMine: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
