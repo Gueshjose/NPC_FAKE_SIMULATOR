@@ -256,7 +256,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   "resourceDonn\xE9": {fileID: 7600433854343949089, guid: d390a4fdbe0cdb5449fb965ea6137a6a,
     type: 3}
-  inithp: 10
+  inithp: 7
   maxCd: 2
   toolsToMine: {fileID: 0}
 --- !u!1 &181217459

@@ -8,6 +8,7 @@ public class Craft : MonoBehaviour
 {
     Resource r1,r2,r3;
     [SerializeField]List<Resource> ResourcesUtilisé;
+    [SerializeField]List<Item> ItemCraftable;
     LivreRecette livreRecette;
     bool SomthingIsCraftable;
     Dictionary<Item,List<Resource>> Recettes;

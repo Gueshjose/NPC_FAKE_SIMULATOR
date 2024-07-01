@@ -6,7 +6,7 @@ using UnityEngine;
 
 public enum ItemType
 {
-    Dager,Sword,Bow,Shield
+    Dager,Sword,Bow,Shield,Axe
 }
 public class Item:MonoBehaviour
 {
