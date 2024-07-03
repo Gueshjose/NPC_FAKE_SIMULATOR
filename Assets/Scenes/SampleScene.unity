@@ -906,6 +906,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: bb711eb4f975f0e4192524d23ec7861c, type: 3}
+--- !u!114 &360464285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360464278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b5c91b126ba15d49a4de9ebf48bc44d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  "resourceDonn\xE9": {fileID: 8915003844386992452, guid: 767b5eb78b958fd41bb9eb77ba79955a,
+    type: 3}
+  inithp: 10
+  maxCd: 2
+  toolsToMine: {fileID: 1586881604}
 --- !u!1001 &361896515
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2878,6 +2895,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 360464283}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: bb711eb4f975f0e4192524d23ec7861c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 360464285}
   m_SourcePrefab: {fileID: 100100000, guid: bb711eb4f975f0e4192524d23ec7861c, type: 3}
 --- !u!1001 &1021357245
 PrefabInstance:
