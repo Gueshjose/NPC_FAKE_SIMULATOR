@@ -38,15 +38,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c0fab6b4a30a7ca48ae2c864ed6a4bdd, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 0.6015344
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c0fab6b4a30a7ca48ae2c864ed6a4bdd, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7071068
+      value: -0.79884684
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c0fab6b4a30a7ca48ae2c864ed6a4bdd, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c0fab6b4a30a7ca48ae2c864ed6a4bdd, type: 3}
       propertyPath: m_LocalRotation.z
@@ -54,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c0fab6b4a30a7ca48ae2c864ed6a4bdd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -106.04
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c0fab6b4a30a7ca48ae2c864ed6a4bdd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -76,6 +76,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 8008900086592578054}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: c0fab6b4a30a7ca48ae2c864ed6a4bdd,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7422521989618427687}
   m_SourcePrefab: {fileID: 100100000, guid: c0fab6b4a30a7ca48ae2c864ed6a4bdd, type: 3}
 --- !u!1 &4833118300438811590 stripped
 GameObject:
@@ -97,3 +101,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nom: Obsidian
   type: 0
+--- !u!136 &7422521989618427687
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4833118300438811590}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.06
+  m_Height: 0.22
+  m_Direction: 2
+  m_Center: {x: -0.005, y: -0.01, z: 0.075842805}
