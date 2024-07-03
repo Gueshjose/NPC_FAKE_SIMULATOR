@@ -27,10 +27,8 @@ public class Minable : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) 
     {
-        Debug.Log("Contact1");
         if(other.gameObject == toolsToMine && cd <= 0)
         {
-            Debug.Log("Contact2");
             cd = maxCd;
             hp = hp -1;
         }
