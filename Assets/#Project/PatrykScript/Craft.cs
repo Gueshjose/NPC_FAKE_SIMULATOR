@@ -137,6 +137,7 @@ public class Craft : MonoBehaviour
         Destroy(r1.gameObject);
         Destroy(r2.gameObject);
         Destroy(r3.gameObject);
+        GetComponent<AudioSource>().Play(0);
         Instantiate(toCraft,new Vector3(transform.position.x,transform.position.y+1,transform.position.z), new Quaternion(0,0,0,0));
         SomthingIsCraftable = false;
         toCraft = null;

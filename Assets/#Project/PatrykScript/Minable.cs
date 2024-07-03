@@ -33,6 +33,8 @@ public class Minable : MonoBehaviour
             Debug.Log("Contact2");
             cd = maxCd;
             hp = hp -1;
+             GetComponent<AudioSource>().Play(0);
+
         }
         if(hp <= 0)
         {
