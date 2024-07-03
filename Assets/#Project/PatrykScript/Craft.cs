@@ -24,7 +24,7 @@ public class Craft : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other) {
-        Debug.Log("OnTriggerEnter");
+        Debug.Log(other.name);
         if(other.tag == "resource")
         {
             if(r1 == null)
@@ -144,9 +144,6 @@ public class Craft : MonoBehaviour
 
     private void CraftNewItem()
     {
-        Debug.Log(r1.nom);
-        Debug.Log(r2.nom);
-        Debug.Log(r3.nom);
         if(SomthingIsCraftable)
         {
         if(r1 != null)
@@ -181,6 +178,106 @@ public class Craft : MonoBehaviour
     //Connection de l item a la liste
     Recettes.Add(ResourcePourRecette,ItemCraftable[1].GetComponent<Item>());
     //Creation de l item
+
+    ResourcePourRecette = new List<Resource>();
+    ResourcePourRecette.Add(ResourcesUtilisé[0].GetComponent<Resource>());
+    ResourcePourRecette.Add(ResourcesUtilisé[1].GetComponent<Resource>());
+    ResourcePourRecette.Add(ResourcesUtilisé[7].GetComponent<Resource>());
+    //Connection de l item a la liste
+    Recettes.Add(ResourcePourRecette,ItemCraftable[2].GetComponent<Item>());
+    //Creation de l item
+    ResourcePourRecette = new List<Resource>();
+    ResourcePourRecette.Add(ResourcesUtilisé[0].GetComponent<Resource>());
+    ResourcePourRecette.Add(ResourcesUtilisé[1].GetComponent<Resource>());
+    ResourcePourRecette.Add(ResourcesUtilisé[1].GetComponent<Resource>());
+    //Connection de l item a la liste
+    Recettes.Add(ResourcePourRecette,ItemCraftable[3].GetComponent<Item>());
+    //Creation de l item
+
+    ResourcePourRecette = new List<Resource>();
+    ResourcePourRecette.Add(ResourcesUtilisé[1].GetComponent<Resource>());
+    ResourcePourRecette.Add(ResourcesUtilisé[1].GetComponent<Resource>());
+    ResourcePourRecette.Add(ResourcesUtilisé[7].GetComponent<Resource>());
+    //Connection de l item a la liste
+    Recettes.Add(ResourcePourRecette,ItemCraftable[4].GetComponent<Item>());
+
+    ResourcePourRecette = new List<Resource>();
+    ResourcePourRecette.Add(ResourcesUtilisé[1].GetComponent<Resource>());
+    ResourcePourRecette.Add(ResourcesUtilisé[1].GetComponent<Resource>());
+    ResourcePourRecette.Add(ResourcesUtilisé[1].GetComponent<Resource>());
+    //Connection de l item a la liste
+    Recettes.Add(ResourcePourRecette,ItemCraftable[5].GetComponent<Item>());
+
+    ResourcePourRecette = new List<Resource>();
+    ResourcePourRecette.Add(ResourcesUtilisé[1].GetComponent<Resource>());
+    ResourcePourRecette.Add(ResourcesUtilisé[3].GetComponent<Resource>());
+    ResourcePourRecette.Add(ResourcesUtilisé[3].GetComponent<Resource>());
+    //Connection de l item a la liste
+    Recettes.Add(ResourcePourRecette,ItemCraftable[6].GetComponent<Item>());
+
+    ResourcePourRecette = new List<Resource>();
+    ResourcePourRecette.Add(ResourcesUtilisé[1].GetComponent<Resource>());
+    ResourcePourRecette.Add(ResourcesUtilisé[6].GetComponent<Resource>());
+    ResourcePourRecette.Add(ResourcesUtilisé[6].GetComponent<Resource>());
+    //Connection de l item a la liste
+    Recettes.Add(ResourcePourRecette,ItemCraftable[7].GetComponent<Item>());
+
+    ResourcePourRecette = new List<Resource>();
+    ResourcePourRecette.Add(ResourcesUtilisé[1].GetComponent<Resource>());
+    ResourcePourRecette.Add(ResourcesUtilisé[7].GetComponent<Resource>());
+    ResourcePourRecette.Add(ResourcesUtilisé[7].GetComponent<Resource>());
+    //Connection de l item a la liste
+    Recettes.Add(ResourcePourRecette,ItemCraftable[8].GetComponent<Item>());
+
+    ResourcePourRecette = new List<Resource>();
+    ResourcePourRecette.Add(ResourcesUtilisé[5].GetComponent<Resource>());
+    ResourcePourRecette.Add(ResourcesUtilisé[6].GetComponent<Resource>());
+    ResourcePourRecette.Add(ResourcesUtilisé[6].GetComponent<Resource>());
+    //Connection de l item a la liste
+    Recettes.Add(ResourcePourRecette,ItemCraftable[9].GetComponent<Item>());
+
+    ResourcePourRecette = new List<Resource>();
+    ResourcePourRecette.Add(ResourcesUtilisé[5].GetComponent<Resource>());
+    ResourcePourRecette.Add(ResourcesUtilisé[7].GetComponent<Resource>());
+    ResourcePourRecette.Add(ResourcesUtilisé[7].GetComponent<Resource>());
+    //Connection de l item a la liste
+    Recettes.Add(ResourcePourRecette,ItemCraftable[10].GetComponent<Item>());
+
+    ResourcePourRecette = new List<Resource>();
+    ResourcePourRecette.Add(ResourcesUtilisé[1].GetComponent<Resource>());
+    ResourcePourRecette.Add(ResourcesUtilisé[5].GetComponent<Resource>());
+    ResourcePourRecette.Add(ResourcesUtilisé[5].GetComponent<Resource>());
+    //Connection de l item a la liste
+    Recettes.Add(ResourcePourRecette,ItemCraftable[11].GetComponent<Item>());
+
+    ResourcePourRecette = new List<Resource>();
+    ResourcePourRecette.Add(ResourcesUtilisé[5].GetComponent<Resource>());
+    ResourcePourRecette.Add(ResourcesUtilisé[3].GetComponent<Resource>());
+    ResourcePourRecette.Add(ResourcesUtilisé[4].GetComponent<Resource>());
+    //Connection de l item a la liste
+    Recettes.Add(ResourcePourRecette,ItemCraftable[12].GetComponent<Item>());
+
+    ResourcePourRecette = new List<Resource>();
+    ResourcePourRecette.Add(ResourcesUtilisé[5].GetComponent<Resource>());
+    ResourcePourRecette.Add(ResourcesUtilisé[3].GetComponent<Resource>());
+    ResourcePourRecette.Add(ResourcesUtilisé[3].GetComponent<Resource>());
+    //Connection de l item a la liste
+    Recettes.Add(ResourcePourRecette,ItemCraftable[13].GetComponent<Item>());
+
+    ResourcePourRecette = new List<Resource>();
+    ResourcePourRecette.Add(ResourcesUtilisé[1].GetComponent<Resource>());
+    ResourcePourRecette.Add(ResourcesUtilisé[5].GetComponent<Resource>());
+    ResourcePourRecette.Add(ResourcesUtilisé[7].GetComponent<Resource>());
+    //Connection de l item a la liste
+    Recettes.Add(ResourcePourRecette,ItemCraftable[14].GetComponent<Item>());
+
+    ResourcePourRecette = new List<Resource>();
+    ResourcePourRecette.Add(ResourcesUtilisé[5].GetComponent<Resource>());
+    ResourcePourRecette.Add(ResourcesUtilisé[5].GetComponent<Resource>());
+    ResourcePourRecette.Add(ResourcesUtilisé[7].GetComponent<Resource>());
+    //Connection de l item a la liste
+    Recettes.Add(ResourcePourRecette,ItemCraftable[15].GetComponent<Item>());
+
 
 
 }
