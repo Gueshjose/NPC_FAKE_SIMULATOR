@@ -41,6 +41,9 @@ public class LivreRecette
     {
         for(int i= 0;i < Craftable.Count;i++)
         {
+            if(Craftable.Keys.ElementAt(i).Count > 2)
+            {
+                Debug.Log(Craftable.Keys.ElementAt(i)[0].nom);Debug.Log(Craftable.Keys.ElementAt(i)[1].nom);Debug.Log(Craftable.Keys.ElementAt(i)[2].nom);
             if(
                   (r1.nom == Craftable.Keys.ElementAt(i)[0].nom && r2.nom == Craftable.Keys.ElementAt(i)[1].nom && r3.nom == Craftable.Keys.ElementAt(i)[2].nom)
                 ||(r1.nom == Craftable.Keys.ElementAt(i)[0].nom && r3.nom == Craftable.Keys.ElementAt(i)[1].nom && r2.nom == Craftable.Keys.ElementAt(i)[2].nom)
@@ -52,8 +55,8 @@ public class LivreRecette
                 ||(r3.nom == Craftable.Keys.ElementAt(i)[0].nom && r2.nom == Craftable.Keys.ElementAt(i)[1].nom && r1.nom == Craftable.Keys.ElementAt(i)[2].nom)
             )
             {
-                Debug.Log(Craftable.Keys.ElementAt(i));
                 return Craftable.Values.ElementAt(i);
+            }
             }
         }
         Debug.Log("false");

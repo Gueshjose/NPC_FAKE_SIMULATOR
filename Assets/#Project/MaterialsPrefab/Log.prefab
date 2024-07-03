@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nom: Wood
-  type: 0
+  type: 2
 --- !u!136 &8078486188361698968
 CapsuleCollider:
   m_ObjectHideFlags: 0

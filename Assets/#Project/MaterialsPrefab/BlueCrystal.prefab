@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nom: BlueCrysrtal
-  type: 0
+  type: 1
 --- !u!64 &3052031691967197644
 MeshCollider:
   m_ObjectHideFlags: 0
