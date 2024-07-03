@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - resource
+  - hammer
   layers:
   - Default
   - TransparentFX

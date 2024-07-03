@@ -46,6 +46,10 @@ public class Craft : MonoBehaviour
                 Debug.Log("Nop Trop des recoures sur la table");
             }
         }
+        if(other.tag == "hammer")
+        {
+                CraftNewItem();
+        }
     }
 
     private void OnTriggerExit(Collider other) 
@@ -55,14 +59,17 @@ public class Craft : MonoBehaviour
             if(r1 == other.GetComponent<Resource>())
             {
                 r1 = null;
+                VerifyIfSomthingIsCraftable();
             }
             else if(r2 == other.GetComponent<Resource>())
             {
                 r2 = null;
+                VerifyIfSomthingIsCraftable();
             }
             else if(r3 == other.GetComponent<Resource>())
             {
                 r3 = null;
+                VerifyIfSomthingIsCraftable();
             }
         }
     }
@@ -118,7 +125,6 @@ public class Craft : MonoBehaviour
         {
             SomthingIsCraftable = false;
         }
-        CraftNewItem();
         return SomthingIsCraftable;
     }
 
