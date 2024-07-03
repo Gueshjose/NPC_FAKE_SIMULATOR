@@ -12,6 +12,7 @@ public class Craft : MonoBehaviour
     LivreRecette livreRecette;
     bool SomthingIsCraftable;
     Dictionary<Item,List<Resource>> Recettes;
+    Item toCraft;
 
     private void Start() 
     {
@@ -19,25 +20,23 @@ public class Craft : MonoBehaviour
         RemplireLivreRecettes();
         livreRecette = new LivreRecette(Recettes);
         SomthingIsCraftable = false;
-        //test
-        Debug.Log(VerifyIfSomthingIsCraftable());
-        //finTest
     }
 
     private void OnTriggerEnter(Collider other) {
+        Debug.Log("OnTriggerEnter");
         if(other.tag == "resource")
         {
-            if(r1 != null)
+            if(r1 == null)
             {
                 r1 = other.GetComponent<Resource>();
                 VerifyIfSomthingIsCraftable();
             }
-            else if(r2 != null)
+            else if(r2 == null)
             {
                 r2 = other.GetComponent<Resource>();
                 VerifyIfSomthingIsCraftable();
             }
-            else if(r3 != null)
+            else if(r3 == null)
             {
                 r3 = other.GetComponent<Resource>();
                 VerifyIfSomthingIsCraftable();
@@ -56,26 +55,24 @@ public class Craft : MonoBehaviour
             if(r1 == other.GetComponent<Resource>())
             {
                 r1 = null;
-                VerifyIfSomthingIsCraftable();
             }
             else if(r2 == other.GetComponent<Resource>())
             {
                 r2 = null;
-                VerifyIfSomthingIsCraftable();
             }
             else if(r3 == other.GetComponent<Resource>())
             {
                 r3 = null;
-                VerifyIfSomthingIsCraftable();
             }
         }
     }
 
     private bool VerifyIfSomthingIsCraftable()
     {
+        Debug.Log("VerifyIfSomthingIsCraftable()");
         if(r3==null && r2 != null && r1 != null)
         {
-            if(livreRecette.Verify(r1,r2))
+            if(toCraft = livreRecette.Verify(r1,r2))
             {
                 SomthingIsCraftable = true;
             }
@@ -86,7 +83,7 @@ public class Craft : MonoBehaviour
         }
         else if(r2 == null && r1 != null && r3 != null)
         {
-            if(livreRecette.Verify(r1,r3))
+            if(toCraft = livreRecette.Verify(r1,r3))
             {
                 SomthingIsCraftable = true;
             }
@@ -97,7 +94,7 @@ public class Craft : MonoBehaviour
         }
         else if(r1 == null && r2 != null && r3 != null)
         {
-            if(livreRecette.Verify(r2,r3))
+            if(toCraft = livreRecette.Verify(r2,r3))
             {
                 SomthingIsCraftable = true;
             }
@@ -108,7 +105,7 @@ public class Craft : MonoBehaviour
         }
         else if(r1 != null && r2 != null && r3 != null)
         {
-            if(livreRecette.Verify(r1,r2,r3))
+            if(toCraft = livreRecette.Verify(r1,r2,r3))
             {
                 SomthingIsCraftable = true;
             }
@@ -121,11 +118,26 @@ public class Craft : MonoBehaviour
         {
             SomthingIsCraftable = false;
         }
+        CraftNewItem();
         return SomthingIsCraftable;
     }
 
+    private void CraftNewItem()
+    {
+        Debug.Log("CraftNewItem");
+        if(SomthingIsCraftable)
+        {
+        Debug.Log(r1.gameObject +""+ r2.gameObject +""+ r3.gameObject);
+        Destroy(r1.gameObject);
+        Destroy(r2.gameObject);
+        Destroy(r3.gameObject);
+        Instantiate(toCraft,new Vector3(transform.position.x,transform.position.y+1,transform.position.z), new Quaternion(0,0,0,0));
+        SomthingIsCraftable = false;
+        toCraft = null;
+        }
+    }
 
-private void RemplireLivreRecettes()
+    private void RemplireLivreRecettes()
 {
     //ResourcesUtilisé;
     //ItemCraftable;
@@ -139,7 +151,7 @@ private void RemplireLivreRecettes()
     //Connection de l item a la liste
     Recettes.Add(ItemCraftable[0].GetComponent<Item>(),ResourcePourRecette);
     //Creation de l item
-    Instantiate(ItemCraftable[0],new Vector3(transform.position.x,transform.position.y+1,transform.position.z), new Quaternion(0,0,0,0));
+    //Instantiate(ItemCraftable[0],new Vector3(transform.position.x,transform.position.y+1,transform.position.z), new Quaternion(0,0,0,0));
 }
 
 }

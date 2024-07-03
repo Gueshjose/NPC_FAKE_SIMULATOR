@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem.LowLevel;
 
@@ -21,13 +22,45 @@ public class LivreRecette
         Craftable = new Dictionary<Item,List<Resource>>();
     }
 
-    public bool Verify(Resource r1, Resource r2)
+    public Item Verify(Resource r1, Resource r2)
     {
-        return true;
+        for(int i= 0;i < Craftable.Count;i++)
+        {
+            if(
+                (r1.nom == Craftable.Values.ElementAt(i)[0].nom && r2.nom == Craftable.Values.ElementAt(i)[1].nom) && Craftable.Values.ElementAt(i)[2] == null
+              ||(r2.nom == Craftable.Values.ElementAt(i)[0].nom && r1.nom == Craftable.Values.ElementAt(i)[1].nom) && Craftable.Values.ElementAt(i)[2] == null
+            )
+            {
+                Debug.Log(Craftable.Keys.ElementAt(i));
+                return Craftable.Keys.ElementAt(i);
+            }
+        }
+        Debug.Log("false");
+        return null;
     }
-    public bool Verify(Resource r1, Resource r2,Resource r3)
+    public Item Verify(Resource r1, Resource r2,Resource r3)
     {
-        return true;
+         Debug.Log(r1.nom +" + "+r2.nom +" + "+r3.nom);
+         Debug.Log(Craftable.Values.ElementAt(0)[0].nom +" + " + Craftable.Values.ElementAt(0)[1].nom +" + "+Craftable.Values.ElementAt(0)[2].nom);
+        for(int i= 0;i < Craftable.Count;i++)
+        {
+            if(
+                  (r1.nom == Craftable.Values.ElementAt(i)[0].nom && r2.nom == Craftable.Values.ElementAt(i)[1].nom && r3.nom == Craftable.Values.ElementAt(i)[2].nom)
+                ||(r1.nom == Craftable.Values.ElementAt(i)[0].nom && r3.nom == Craftable.Values.ElementAt(i)[1].nom && r2.nom == Craftable.Values.ElementAt(i)[2].nom)
+
+                ||(r2.nom == Craftable.Values.ElementAt(i)[0].nom && r1.nom == Craftable.Values.ElementAt(i)[1].nom && r3.nom == Craftable.Values.ElementAt(i)[2].nom)
+                ||(r2.nom == Craftable.Values.ElementAt(i)[0].nom && r3.nom == Craftable.Values.ElementAt(i)[1].nom && r1.nom == Craftable.Values.ElementAt(i)[2].nom)
+
+                ||(r3.nom == Craftable.Values.ElementAt(i)[0].nom && r1.nom == Craftable.Values.ElementAt(i)[1].nom && r2.nom == Craftable.Values.ElementAt(i)[2].nom)
+                ||(r3.nom == Craftable.Values.ElementAt(i)[0].nom && r2.nom == Craftable.Values.ElementAt(i)[1].nom && r1.nom == Craftable.Values.ElementAt(i)[2].nom)
+            )
+            {
+                Debug.Log(Craftable.Keys.ElementAt(i));
+                return Craftable.Keys.ElementAt(i);
+            }
+        }
+        Debug.Log("false");
+        return null;
     }
 
     public void addRecepies(Item CibleCrafting,List<Resource> listR)

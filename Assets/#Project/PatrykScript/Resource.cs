@@ -9,7 +9,7 @@ public enum ResourceType
 }
 public class Resource:MonoBehaviour
 {
-    [SerializeField]String nom;
+    public String nom;
     [SerializeField]ResourceType type;
     
     //ont peut donner valeur en gold etc;
