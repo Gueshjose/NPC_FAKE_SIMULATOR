@@ -27,33 +27,39 @@ public class LivreRecette
         for(int i= 0;i < Craftable.Count;i++)
         {
             if(
-                (r1 == Craftable.Values.ElementAt(i)[0] && r2 == Craftable.Values.ElementAt(i)[1] || r2 == Craftable.Values.ElementAt(i)[2])
-                ||(r2 == Craftable.Values.ElementAt(i)[0] && r1 == Craftable.Values.ElementAt(i)[1] || r1 == Craftable.Values.ElementAt(i)[2])
+                (r1.nom == Craftable.Values.ElementAt(i)[0].nom && r2.nom == Craftable.Values.ElementAt(i)[1].nom) && Craftable.Values.ElementAt(i)[2] == null
+              ||(r2.nom == Craftable.Values.ElementAt(i)[0].nom && r1.nom == Craftable.Values.ElementAt(i)[1].nom) && Craftable.Values.ElementAt(i)[2] == null
             )
             {
+                Debug.Log(Craftable.Keys.ElementAt(i));
                 return Craftable.Keys.ElementAt(i);
             }
         }
+        Debug.Log("false");
         return null;
     }
     public Item Verify(Resource r1, Resource r2,Resource r3)
     {
+         Debug.Log(r1.nom +" + "+r2.nom +" + "+r3.nom);
+         Debug.Log(Craftable.Values.ElementAt(0)[0].nom +" + " + Craftable.Values.ElementAt(0)[1].nom +" + "+Craftable.Values.ElementAt(0)[2].nom);
         for(int i= 0;i < Craftable.Count;i++)
         {
             if(
-                (r1 == Craftable.Values.ElementAt(i)[0] && r2 == Craftable.Values.ElementAt(i)[1] && r3 == Craftable.Values.ElementAt(i)[2])
-                ||(r1 == Craftable.Values.ElementAt(i)[0] && r3 == Craftable.Values.ElementAt(i)[1] && r2 == Craftable.Values.ElementAt(i)[2])
+                  (r1.nom == Craftable.Values.ElementAt(i)[0].nom && r2.nom == Craftable.Values.ElementAt(i)[1].nom && r3.nom == Craftable.Values.ElementAt(i)[2].nom)
+                ||(r1.nom == Craftable.Values.ElementAt(i)[0].nom && r3.nom == Craftable.Values.ElementAt(i)[1].nom && r2.nom == Craftable.Values.ElementAt(i)[2].nom)
 
-                ||(r2 == Craftable.Values.ElementAt(i)[0] && r1 == Craftable.Values.ElementAt(i)[1] && r3 == Craftable.Values.ElementAt(i)[2])
-                ||(r2 == Craftable.Values.ElementAt(i)[0] && r3 == Craftable.Values.ElementAt(i)[1] && r1 == Craftable.Values.ElementAt(i)[2])
+                ||(r2.nom == Craftable.Values.ElementAt(i)[0].nom && r1.nom == Craftable.Values.ElementAt(i)[1].nom && r3.nom == Craftable.Values.ElementAt(i)[2].nom)
+                ||(r2.nom == Craftable.Values.ElementAt(i)[0].nom && r3.nom == Craftable.Values.ElementAt(i)[1].nom && r1.nom == Craftable.Values.ElementAt(i)[2].nom)
 
-                ||(r3 == Craftable.Values.ElementAt(i)[0] && r1 == Craftable.Values.ElementAt(i)[1] && r2 == Craftable.Values.ElementAt(i)[2])
-                ||(r3 == Craftable.Values.ElementAt(i)[0] && r2 == Craftable.Values.ElementAt(i)[1] && r1 == Craftable.Values.ElementAt(i)[2])
+                ||(r3.nom == Craftable.Values.ElementAt(i)[0].nom && r1.nom == Craftable.Values.ElementAt(i)[1].nom && r2.nom == Craftable.Values.ElementAt(i)[2].nom)
+                ||(r3.nom == Craftable.Values.ElementAt(i)[0].nom && r2.nom == Craftable.Values.ElementAt(i)[1].nom && r1.nom == Craftable.Values.ElementAt(i)[2].nom)
             )
             {
+                Debug.Log(Craftable.Keys.ElementAt(i));
                 return Craftable.Keys.ElementAt(i);
             }
         }
+        Debug.Log("false");
         return null;
     }
 

@@ -20,30 +20,24 @@ public class Craft : MonoBehaviour
         RemplireLivreRecettes();
         livreRecette = new LivreRecette(Recettes);
         SomthingIsCraftable = false;
-        //test
-        Debug.Log(VerifyIfSomthingIsCraftable());
-        //finTest
     }
 
     private void OnTriggerEnter(Collider other) {
-        Debug.Log("test");
+        Debug.Log("OnTriggerEnter");
         if(other.tag == "resource")
         {
-            if(r1 != null)
+            if(r1 == null)
             {
-                 Debug.Log("testr1");
                 r1 = other.GetComponent<Resource>();
                 VerifyIfSomthingIsCraftable();
             }
-            else if(r2 != null)
+            else if(r2 == null)
             {
-                 Debug.Log("testr2");
                 r2 = other.GetComponent<Resource>();
                 VerifyIfSomthingIsCraftable();
             }
-            else if(r3 != null)
+            else if(r3 == null)
             {
-                 Debug.Log("testr3");
                 r3 = other.GetComponent<Resource>();
                 VerifyIfSomthingIsCraftable();
             }
@@ -52,11 +46,6 @@ public class Craft : MonoBehaviour
                 Debug.Log("Nop Trop des recoures sur la table");
             }
         }
-        if(SomthingIsCraftable)
-        {
-            Instantiate(ItemCraftable[0],new Vector3(transform.position.x,transform.position.y+1,transform.position.z), new Quaternion(0,0,0,0));
-        }
-
     }
 
     private void OnTriggerExit(Collider other) 
@@ -65,27 +54,22 @@ public class Craft : MonoBehaviour
         {
             if(r1 == other.GetComponent<Resource>())
             {
-                 Debug.Log("testex1");
                 r1 = null;
-                VerifyIfSomthingIsCraftable();
             }
             else if(r2 == other.GetComponent<Resource>())
             {
-                Debug.Log("testex2");
                 r2 = null;
-                VerifyIfSomthingIsCraftable();
             }
             else if(r3 == other.GetComponent<Resource>())
             {
-                Debug.Log("testex3");
                 r3 = null;
-                VerifyIfSomthingIsCraftable();
             }
         }
     }
 
     private bool VerifyIfSomthingIsCraftable()
     {
+        Debug.Log("VerifyIfSomthingIsCraftable()");
         if(r3==null && r2 != null && r1 != null)
         {
             if(toCraft = livreRecette.Verify(r1,r2))
@@ -140,7 +124,17 @@ public class Craft : MonoBehaviour
 
     private void CraftNewItem()
     {
+        Debug.Log("CraftNewItem");
+        if(SomthingIsCraftable)
+        {
+        Debug.Log(r1.gameObject +""+ r2.gameObject +""+ r3.gameObject);
+        Destroy(r1.gameObject);
+        Destroy(r2.gameObject);
+        Destroy(r3.gameObject);
         Instantiate(toCraft,new Vector3(transform.position.x,transform.position.y+1,transform.position.z), new Quaternion(0,0,0,0));
+        SomthingIsCraftable = false;
+        toCraft = null;
+        }
     }
 
     private void RemplireLivreRecettes()
