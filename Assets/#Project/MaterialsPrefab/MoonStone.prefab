@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoonStone
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 456aa20c486e5da4c91e989620329b6d, type: 3}
+      propertyPath: m_TagString
+      value: resource
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 456aa20c486e5da4c91e989620329b6d, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
