@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,11 +11,17 @@ public class Item:MonoBehaviour
 {
     [SerializeField]string nom;
     [SerializeField]ItemType type;
-    [SerializeField]int dmg;
+    [SerializeField]int dmgMin;
+    [SerializeField]int dmgMax;
 
     Item(string nom,ItemType type)
     {
         this.nom = nom;
         this.type = type;
+    }
+
+    public int Damage()
+    {
+        return Random.Range(dmgMin,dmgMax);
     }
 }

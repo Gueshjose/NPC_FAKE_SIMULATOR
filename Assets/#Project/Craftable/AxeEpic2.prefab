@@ -146,6 +146,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nom: AxeEpic2
   type: 4
+  dmgMin: 10
+  dmgMax: 15
 --- !u!54 &5172072606431635789
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -101,6 +101,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nom: Hammer2
   type: 4
+  dmgMin: 10
+  dmgMax: 15
 --- !u!54 &4304569472795987284
 Rigidbody:
   m_ObjectHideFlags: 0

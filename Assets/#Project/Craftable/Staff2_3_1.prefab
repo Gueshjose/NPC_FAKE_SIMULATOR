@@ -101,6 +101,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nom: Staff5
   type: 2
+  dmgMin: 6
+  dmgMax: 9
 --- !u!54 &3406777898054547757
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -133,6 +133,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nom: sword5
   type: 1
+  dmgMin: 20
+  dmgMax: 25
 --- !u!54 &1884727253449176926
 Rigidbody:
   m_ObjectHideFlags: 0
