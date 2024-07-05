@@ -15,7 +15,6 @@ public class Minable : MonoBehaviour
 
     private void Start() {
         hp = inithp;
-        Instantiate(resourceDonné,new Vector3(transform.position.x,transform.position.y+3,transform.position.z), new Quaternion(0,0,0,0));
     }
     private void Update() 
     {
