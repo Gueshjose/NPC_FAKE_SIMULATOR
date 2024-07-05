@@ -187,9 +187,9 @@ public class Craft : MonoBehaviour
     Recettes.Add(ResourcePourRecette,ItemCraftable[2].GetComponent<Item>());
     //Creation de l item
     ResourcePourRecette = new List<Resource>();
+    ResourcePourRecette.Add(ResourcesUtilisé[1].GetComponent<Resource>());
+    ResourcePourRecette.Add(ResourcesUtilisé[1].GetComponent<Resource>());
     ResourcePourRecette.Add(ResourcesUtilisé[0].GetComponent<Resource>());
-    ResourcePourRecette.Add(ResourcesUtilisé[1].GetComponent<Resource>());
-    ResourcePourRecette.Add(ResourcesUtilisé[1].GetComponent<Resource>());
     //Connection de l item a la liste
     Recettes.Add(ResourcePourRecette,ItemCraftable[3].GetComponent<Item>());
     //Creation de l item
@@ -277,8 +277,6 @@ public class Craft : MonoBehaviour
     ResourcePourRecette.Add(ResourcesUtilisé[7].GetComponent<Resource>());
     //Connection de l item a la liste
     Recettes.Add(ResourcePourRecette,ItemCraftable[15].GetComponent<Item>());
-
-
 
 }
 
