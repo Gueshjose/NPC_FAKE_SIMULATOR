@@ -12,6 +12,7 @@ public class Item:MonoBehaviour
 {
     [SerializeField]string nom;
     [SerializeField]ItemType type;
+    [SerializeField]int dmg;
 
     Item(string nom,ItemType type)
     {

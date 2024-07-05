@@ -43,6 +43,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obsidian
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c0fab6b4a30a7ca48ae2c864ed6a4bdd, type: 3}
+      propertyPath: m_TagString
+      value: resource
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c0fab6b4a30a7ca48ae2c864ed6a4bdd, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.78

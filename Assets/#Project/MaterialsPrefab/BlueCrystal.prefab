@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlueCrystal
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 17ca2b0ac31cb494993a64142da8659a, type: 3}
+      propertyPath: m_TagString
+      value: resource
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 17ca2b0ac31cb494993a64142da8659a, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.78
