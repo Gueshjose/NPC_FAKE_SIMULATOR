@@ -136,6 +136,8 @@ MonoBehaviour:
   type: 1
   dmg: 0
   craftingMaterial: {fileID: 2100000, guid: 10beb4d70e18525498a1907a57a26719, type: 2}
+  dmgMin: 20
+  dmgMax: 25
 --- !u!54 &1884727253449176926
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,7 +11,8 @@ public class Item:MonoBehaviour
 {
     [SerializeField]string nom;
     [SerializeField]ItemType type;
-    [SerializeField]int dmg;
+    [SerializeField]int dmgMin;
+    [SerializeField]int dmgMax;
 
     [SerializeField]Material craftingMaterial;
     Material finalMaterial;
@@ -44,5 +44,10 @@ public class Item:MonoBehaviour
         }
         
         }
+    }
+
+    public int Damage()
+    {
+        return Random.Range(dmgMin,dmgMax);
     }
 }
