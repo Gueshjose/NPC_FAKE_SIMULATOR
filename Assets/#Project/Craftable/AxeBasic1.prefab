@@ -123,6 +123,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 5763105805557254170}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f69720c81c105ec42b0ddfbbfc620e5c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4544231096550899278}
   m_SourcePrefab: {fileID: 100100000, guid: f69720c81c105ec42b0ddfbbfc620e5c, type: 3}
 --- !u!1 &5854030306071037285 stripped
 GameObject:
@@ -144,6 +148,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nom: BattleAxe1
   type: 4
+  dmg: 0
+  craftingMaterial: {fileID: 2100000, guid: 10beb4d70e18525498a1907a57a26719, type: 2}
 --- !u!54 &9132019040815666621
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -345,6 +351,27 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 917642971047383690, guid: f69720c81c105ec42b0ddfbbfc620e5c, type: 3}
+--- !u!65 &4544231096550899278
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5854030306071037285}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.3935283, y: 0.9214714, z: 0.084061176}
+  m_Center: {x: -0.0046464503, y: 0.32782683, z: -0.00000011175871}
 --- !u!4 &6518504303870353375 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f69720c81c105ec42b0ddfbbfc620e5c,

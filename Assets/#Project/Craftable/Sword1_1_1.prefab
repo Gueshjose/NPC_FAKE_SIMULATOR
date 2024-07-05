@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: -7447560159273066764}
   - component: {fileID: 3196978722097779594}
   - component: {fileID: 6071885043578714868}
+  - component: {fileID: 4775943748635081624}
+  - component: {fileID: 973645625411346598}
   m_Layer: 0
   m_Name: Sword1_1_1
   m_TagString: Untagged
@@ -101,6 +103,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nom: sword1
   type: 1
+  dmg: 0
+  craftingMaterial: {fileID: 2100000, guid: 10beb4d70e18525498a1907a57a26719, type: 2}
 --- !u!54 &3196978722097779594
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -280,6 +284,49 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!64 &4775943748635081624
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3488398141743259674}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8433825126486166706, guid: 74917ffd0a769cf4eb30661c6ddd29bd, type: 3}
+--- !u!65 &973645625411346598
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3488398141743259674}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.21625297, y: 1.178661, z: 0.08534306}
+  m_Center: {x: 0, y: 0.0051040053, z: -0.000000035390258}
 --- !u!1 &4752161247168533651
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,10 +12,10 @@ public class Minable : MonoBehaviour
     float cd=0;
     [SerializeField]float maxCd;
     [SerializeField]GameObject toolsToMine;
+    [SerializeField]float spawnX=0,spawnY=0,spawnZ=0;
 
     private void Start() {
         hp = inithp;
-        Instantiate(resourceDonné,new Vector3(transform.position.x,transform.position.y+3,transform.position.z), new Quaternion(0,0,0,0));
     }
     private void Update() 
     {
@@ -43,6 +43,6 @@ public class Minable : MonoBehaviour
 
     private void GiveRescource()
     {
-        Instantiate(resourceDonné,new Vector3(transform.position.x,transform.position.y+1,transform.position.z), new Quaternion(0,0,0,0));
+        Instantiate(resourceDonné,new Vector3(transform.position.x+spawnX,transform.position.y+spawnY,transform.position.z+spawnZ), new Quaternion(0,0,0,0));
     }
 }

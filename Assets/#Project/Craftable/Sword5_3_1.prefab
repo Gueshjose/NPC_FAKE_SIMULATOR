@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 1884727253449176926}
   - component: {fileID: 7788940977486717674}
   - component: {fileID: -3574743661880773862}
+  - component: {fileID: -8217444332038590091}
   m_Layer: 0
   m_Name: Sword5_3_1
   m_TagString: Untagged
@@ -133,6 +134,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nom: sword5
   type: 1
+  dmg: 0
+  craftingMaterial: {fileID: 2100000, guid: 10beb4d70e18525498a1907a57a26719, type: 2}
 --- !u!54 &1884727253449176926
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -334,3 +337,24 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3786726686612456252, guid: 089fee205c12de840b19b6353d444fa9, type: 3}
+--- !u!65 &-8217444332038590091
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633230847251365062}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.391366, y: 1.1583819, z: 0.085711695}
+  m_Center: {x: -0.0510415, y: 0.03245899, z: -0.0000053681433}

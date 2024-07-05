@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: -5963414945749653887}
   - component: {fileID: 4304569472795987284}
   - component: {fileID: 2544459878977905006}
+  - component: {fileID: -2259959298840793289}
+  - component: {fileID: 8387222954262281328}
   m_Layer: 0
   m_Name: Hammer2_3_1
   m_TagString: Untagged
@@ -101,6 +103,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nom: Hammer2
   type: 4
+  dmg: 0
+  craftingMaterial: {fileID: 2100000, guid: 10beb4d70e18525498a1907a57a26719, type: 2}
 --- !u!54 &4304569472795987284
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -280,6 +284,49 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!64 &-2259959298840793289
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171119676311907987}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8264658675821639953, guid: 47daaf75d4492c54d9031a46175a5994, type: 3}
+--- !u!65 &8387222954262281328
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171119676311907987}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.42821747, y: 0.9956521, z: 0.2922973}
+  m_Center: {x: -0.0017870814, y: 0.010904685, z: -0.00033406168}
 --- !u!1 &2850979614785881318
 GameObject:
   m_ObjectHideFlags: 0
