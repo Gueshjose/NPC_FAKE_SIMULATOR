@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2425408347839842755}
   - component: {fileID: 9196030892799843282}
   - component: {fileID: 1612036420533390871}
+  - component: {fileID: -5139938544815083555}
   m_Layer: 0
   m_Name: Staff2_2_3
   m_TagString: Untagged
@@ -305,6 +306,27 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 8092327190978466179, guid: ed131d73eb72abe4b8f101dd0e896ad8, type: 3}
+--- !u!65 &-5139938544815083555
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918244398439921451}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.09210506, y: 0.9415958, z: 0.13237804}
+  m_Center: {x: -0.000000031664968, y: -0.35824406, z: 0.027205978}
 --- !u!1 &2576965858374701309
 GameObject:
   m_ObjectHideFlags: 0

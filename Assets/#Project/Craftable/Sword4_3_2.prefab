@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4058726140678879343}
   - component: {fileID: 1485871639742927869}
   - component: {fileID: -5786937601408549965}
+  - component: {fileID: -3417558558932652428}
   m_Layer: 0
   m_Name: Sword4_3_2
   m_TagString: Untagged
@@ -305,6 +306,27 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -7596135217432262001, guid: 4db1660b6a1ed4d41acb446d1cd0ff4d, type: 3}
+--- !u!65 &-3417558558932652428
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4960416143278282453}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.20981768, y: 1.062321, z: 0.1319833}
+  m_Center: {x: -0.019047942, y: -0.0048604608, z: -0.000000044703484}
 --- !u!1 &7491485897858074217
 GameObject:
   m_ObjectHideFlags: 0
