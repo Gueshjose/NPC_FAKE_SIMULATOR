@@ -14,9 +14,17 @@ public class Item:MonoBehaviour
     [SerializeField]ItemType type;
     [SerializeField]int dmg;
 
+    [SerializeField]Material craftingMaterial;
+    Material finalMaterial;
+
     Item(string nom,ItemType type)
     {
         this.nom = nom;
         this.type = type;
+    }
+
+    private void Start() {
+        finalMaterial = transform.GetComponent<Renderer>().material;
+        transform.GetComponent<Renderer>().material = craftingMaterial;
     }
 }

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7477469011467511292}
   - component: {fileID: 4634904000570761004}
   - component: {fileID: 8248894243585389152}
+  - component: {fileID: 5240640351985225313}
   m_Layer: 0
   m_Name: Staff2_2_6
   m_TagString: Untagged
@@ -101,6 +102,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nom: Staff4
   type: 2
+  dmg: 0
+  craftingMaterial: {fileID: 2100000, guid: 10beb4d70e18525498a1907a57a26719, type: 2}
 --- !u!54 &4634904000570761004
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -280,6 +283,28 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!64 &5240640351985225313
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2748783234611366399}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8092327190978466179, guid: ed131d73eb72abe4b8f101dd0e896ad8, type: 3}
 --- !u!1 &9072317538243847586
 GameObject:
   m_ObjectHideFlags: 0
