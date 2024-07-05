@@ -102,7 +102,7 @@ Material:
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.005
-    - _Pourcentage: 0
+    - _Pourcentage: 0.8
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1

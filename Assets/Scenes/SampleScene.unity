@@ -242,6 +242,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &2903109
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -890,6 +893,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &31348098
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1031,6 +1037,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &32550059
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1488,6 +1497,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &73277488
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1677,74 +1689,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 767b5eb78b958fd41bb9eb77ba79955a, type: 3}
---- !u!1001 &107299896
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4960416143278282453, guid: bfa8490997e7a264b8889225327becc5,
-        type: 3}
-      propertyPath: m_Name
-      value: Sword4_3_2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7014503823177332288, guid: bfa8490997e7a264b8889225327becc5,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.5611044
-      objectReference: {fileID: 0}
-    - target: {fileID: 7014503823177332288, guid: bfa8490997e7a264b8889225327becc5,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5360208
-      objectReference: {fileID: 0}
-    - target: {fileID: 7014503823177332288, guid: bfa8490997e7a264b8889225327becc5,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -6.0358667
-      objectReference: {fileID: 0}
-    - target: {fileID: 7014503823177332288, guid: bfa8490997e7a264b8889225327becc5,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7014503823177332288, guid: bfa8490997e7a264b8889225327becc5,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7014503823177332288, guid: bfa8490997e7a264b8889225327becc5,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7014503823177332288, guid: bfa8490997e7a264b8889225327becc5,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7014503823177332288, guid: bfa8490997e7a264b8889225327becc5,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7014503823177332288, guid: bfa8490997e7a264b8889225327becc5,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7014503823177332288, guid: bfa8490997e7a264b8889225327becc5,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: bfa8490997e7a264b8889225327becc5, type: 3}
 --- !u!4 &110341556 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 634944641240757438, guid: 5d1b0f53facb86747a21079050aff993,
@@ -2396,6 +2340,9 @@ MonoBehaviour:
   inithp: 7
   maxCd: 2
   toolsToMine: {fileID: 1586881604}
+  spawnX: 0
+  spawnY: 0
+  spawnZ: 0
 --- !u!65 &150117134
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3111,6 +3058,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &187043853
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3638,6 +3588,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &220185757
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4548,6 +4501,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &278416034
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4890,6 +4846,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &311459766
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5456,6 +5415,12 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &336638915 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1288520479386152, guid: 8e2a80e35db1ddd4090f8cc5ca764511,
+    type: 3}
+  m_PrefabInstance: {fileID: 2074203901}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &336822967 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 634944641240757438, guid: 5d1b0f53facb86747a21079050aff993,
@@ -5593,6 +5558,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &355901466
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5788,6 +5756,9 @@ MonoBehaviour:
   inithp: 10
   maxCd: 2
   toolsToMine: {fileID: 1586881604}
+  spawnX: 0
+  spawnY: 0
+  spawnZ: 0
 --- !u!82 &360464290
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6154,6 +6125,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &362246233
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6587,6 +6561,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &386173022
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7915,6 +7892,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &453372463
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8200,6 +8180,9 @@ MonoBehaviour:
   inithp: 10
   maxCd: 5
   toolsToMine: {fileID: 1586881604}
+  spawnX: 0
+  spawnY: 0
+  spawnZ: 0
 --- !u!65 &474303351
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8460,6 +8443,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &494797360
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8607,6 +8593,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &498219090
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9182,17 +9171,17 @@ PrefabInstance:
     - target: {fileID: 359929069044472732, guid: 12137e5a4f0f13d45b921a301983726b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.55
+      value: -5.704
       objectReference: {fileID: 0}
     - target: {fileID: 359929069044472732, guid: 12137e5a4f0f13d45b921a301983726b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.872
+      value: -10.101
       objectReference: {fileID: 0}
     - target: {fileID: 359929069044472732, guid: 12137e5a4f0f13d45b921a301983726b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.715
+      value: 1.72
       objectReference: {fileID: 0}
     - target: {fileID: 359929069044472732, guid: 12137e5a4f0f13d45b921a301983726b,
         type: 3}
@@ -9376,6 +9365,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &583123435
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11361,6 +11353,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &727638274
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12126,6 +12121,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &809482790
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12461,6 +12459,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &829799909
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13305,6 +13306,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &874050385
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13446,6 +13450,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &880437188
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15375,6 +15382,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &1019485830
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15905,6 +15915,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &1040619968
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15950,6 +15963,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &1047136165
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17082,6 +17098,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &1136672387
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17221,6 +17240,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Gisement_PurpleCrystal
+      objectReference: {fileID: 0}
+    - target: {fileID: 5060389835551638788, guid: 2317c30da5d99ec46b6465a93ada21d6,
+        type: 3}
+      propertyPath: spawnY
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5060389835551638788, guid: 2317c30da5d99ec46b6465a93ada21d6,
+        type: 3}
+      propertyPath: spawnZ
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5060389835551638788, guid: 2317c30da5d99ec46b6465a93ada21d6,
         type: 3}
@@ -17490,6 +17519,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &1168456595
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17696,6 +17728,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &1176171404
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17909,6 +17944,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Gisement_BlueCrystal
+      objectReference: {fileID: 0}
+    - target: {fileID: 6794929607198333282, guid: 87946888a362adf499ab55c26d09467b,
+        type: 3}
+      propertyPath: spawnX
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 6794929607198333282, guid: 87946888a362adf499ab55c26d09467b,
         type: 3}
@@ -18128,6 +18168,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &1208931532
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18281,6 +18324,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &1240062374
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18642,6 +18688,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &1274440869
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19007,6 +19056,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &1312461401
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19244,6 +19296,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &1319954268
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19604,6 +19659,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &1342456953
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20014,6 +20072,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &1372853165
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20410,6 +20471,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &1397865600
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20617,6 +20681,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &1412508241
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20758,6 +20825,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &1414623881
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21871,6 +21941,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &1482197243
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22794,6 +22867,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &1523014302
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -23927,6 +24003,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &1611724510
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -24068,6 +24147,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &1621330527
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -24209,6 +24291,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &1625256319
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -24350,6 +24435,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &1626803768
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -25348,6 +25436,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &1674277237
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -26181,6 +26272,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &1775692072
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -26317,6 +26411,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &1790090800
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -26856,6 +26953,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &1822335344
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27605,6 +27705,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &1906942954
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28100,6 +28203,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &1926728806
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28735,6 +28841,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &1958637649
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29846,6 +29955,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &2017197086
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -30255,6 +30367,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &2042220062
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -30553,6 +30668,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &2048415602
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -30846,7 +30964,15 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1288520479386152, guid: 8e2a80e35db1ddd4090f8cc5ca764511,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2092126191}
+    - targetCorrespondingSourceObject: {fileID: 1288520479386152, guid: 8e2a80e35db1ddd4090f8cc5ca764511,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2092126190}
   m_SourcePrefab: {fileID: 100100000, guid: 8e2a80e35db1ddd4090f8cc5ca764511, type: 3}
 --- !u!1 &2074248325
 GameObject:
@@ -31095,6 +31221,70 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2074203901}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &2092126190
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336638915}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
+--- !u!23 &2092126191
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336638915}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!4 &2093245776 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4356311853730785322, guid: 7a68d5b2a44ea9c4f9769976df5fe084,
@@ -31259,6 +31449,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 1586881604}
+  spawnX: 0
+  spawnY: 0
+  spawnZ: 0
 --- !u!65 &2098863128
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31716,6 +31909,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &2104779852
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -31881,6 +32077,9 @@ MonoBehaviour:
   inithp: 5
   maxCd: 2
   toolsToMine: {fileID: 335846128}
+  spawnX: 0
+  spawnY: 1
+  spawnZ: 0
 --- !u!64 &2137940271
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -32189,4 +32388,3 @@ SceneRoots:
   - {fileID: 661036085}
   - {fileID: 89690982}
   - {fileID: 909282880}
-  - {fileID: 107299896}
